@@ -1,0 +1,29 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main bubble body -->
+  <rect x="8" y="16" width="8" height="8" fill="#9333ea"/>
+  <rect x="16" y="8" width="8" height="8" fill="#9333ea"/>
+  <rect x="24" y="8" width="16" height="8" fill="#9333ea"/>
+  <rect x="40" y="16" width="8" height="8" fill="#9333ea"/>
+  <rect x="48" y="24" width="8" height="8" fill="#9333ea"/>
+  <rect x="48" y="32" width="8" height="8" fill="#9333ea"/>
+  <rect x="40" y="40" width="8" height="8" fill="#9333ea"/>
+  <rect x="24" y="48" width="16" height="8" fill="#9333ea"/>
+  <rect x="16" y="40" width="8" height="8" fill="#9333ea"/>
+  <rect x="8" y="32" width="8" height="8" fill="#9333ea"/>
+  <rect x="8" y="24" width="8" height="8" fill="#9333ea"/>
+  
+  <!-- Fill the bubble -->
+  <rect x="16" y="16" width="32" height="32" fill="#9333ea"/>
+  
+  <!-- Highlights -->
+  <rect x="16" y="16" width="8" height="8" fill="#a855f7"/>
+  <rect x="24" y="16" width="8" height="8" fill="#a855f7"/>
+  <rect x="32" y="16" width="8" height="8" fill="#a855f7"/>
+  <rect x="16" y="24" width="8" height="8" fill="#a855f7"/>
+  <rect x="24" y="24" width="8" height="8" fill="#c084fc"/>
+  <rect x="32" y="24" width="8" height="8" fill="#a855f7"/>
+  
+  <!-- Small tail bubble -->
+  <rect x="16" y="56" width="8" height="8" fill="#9333ea"/>
+  <rect x="8" y="48" width="8" height="8" fill="#9333ea"/>
+</svg>
