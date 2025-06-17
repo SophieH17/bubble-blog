@@ -20,11 +20,15 @@ declare module 'vue' {
     ElMain: typeof import('element-plus/es')['ElMain']
     ElOption: typeof import('element-plus/es')['ElOption']
     ElSelect: typeof import('element-plus/es')['ElSelect']
+    ElSpace: typeof import('element-plus/es')['ElSpace']
     ElTag: typeof import('element-plus/es')['ElTag']
+    ElText: typeof import('element-plus/es')['ElText']
     ElTooltip: typeof import('element-plus/es')['ElTooltip']
-    HeadBar: typeof import('./src/components/HeadBar.vue')['default']
+    HeadBar: typeof import('./src/components/bars/HeadBar.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    MenuBar: typeof import('./src/components/bars/MenuBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TopTitle: typeof import('./src/components/bars/TopTitle.vue')['default']
   }
 }

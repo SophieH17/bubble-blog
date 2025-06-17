@@ -1,11 +1,9 @@
 <template>
   <div class="head-bar">
-    <div class="logo-container">
-      <router-link to="/" class="logo-link">
-        <img src="../assets/bubble-blog.svg" class="logo" />
-        <span class="title">Bubble Blog</span>
-      </router-link>
-    </div>
+  <div class="logo-container" @click="backHome">
+    <img src="../../assets/bubble-blog.svg" class="logo" />
+    <span class="title">Bubble Blog</span>
+  </div>
 
     <div class="right-actions">
       <!-- <el-icon><Message /></el-icon> -->
@@ -44,6 +42,12 @@
 <script setup lang="ts">
 import { ref, onBeforeMount } from "vue";
 import { Moon, Sunny } from "@element-plus/icons-vue";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+const backHome = () => {
+  router.push("/");
+};
 
 const isDark = ref(false);
 
@@ -69,7 +73,7 @@ onBeforeMount(() => {
   left: 0;
   width: 100%;
   height: 60px;
-  background-color: var(--el-bg-color);
+  background-color: var(--el-bg-color-overlay);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 10;
   display: flex;
@@ -89,9 +93,15 @@ onBeforeMount(() => {
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: var(--el-bg-color-overlay);
+  }
 }
-
 .right-actions {
   display: flex;
   align-items: center;

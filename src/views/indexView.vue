@@ -1,13 +1,17 @@
 <template>
-    <h1>Bubble Blog</h1>
-    <nav>
-      <router-link to="/overview">Overview</router-link> |
-      <router-link to="/posts">Posts</router-link>
-    </nav>
-    <div>
-      <router-view />
-    </div>
+  <div class="index-view">
+    <menu-bar />
+    <router-view />
+  </div>
 </template>
 
 <script setup lang="ts">
+import MenuBar from "../components/bars/MenuBar.vue";
 </script>
+
+<style lang="scss" scoped>
+.index-view {
+  display: flex;
+  padding: 32px 32px 32px 232px;
+}
+</style>

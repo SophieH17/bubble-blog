@@ -1,20 +1,7 @@
-<!-- <template>
-    <div>Overview</div>
-</template>
-
-<script lang="ts" setup></script>
-<style lang="sass" scoped></style> -->
 <template>
-  <div class="dark">
-    <el-button>Default</el-button>
-    <el-button type="primary">Primary</el-button>
-    <el-button type="success">Success</el-button>
-    <el-button type="info">Info</el-button>
-    <el-button type="warning">Warning</el-button>
-    <el-button type="danger">Danger</el-button>
-  </div>
+<top-title />
 </template>
 
 <script setup lang="ts">
-console.log('Overview component loaded') // 用于调试
+import TopTitle from '../components/bars/TopTitle.vue';
 </script>

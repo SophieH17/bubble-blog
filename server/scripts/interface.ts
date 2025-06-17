@@ -24,7 +24,7 @@ export type overview = {
 //     code: number; // 200 for success, 300 if token is invalid, 400 for deny, 500 for error
 //     data?: {
 //         file: string; // file path
-//         article_count: number; // article count
+//         post_count: number; // post count
 //         image_count: number; // image count
 //         diary_count: number; // diary count
 //     }
@@ -95,3 +95,83 @@ export type new_comments = {
 //         }[];
 //     }
 // }
+
+// --------------new_messages--------------
+export type new_messages = {
+    token: string; // JWT token
+    // count of comments to fetch perpage
+    perpage: number;
+    current_page: number; // current page number
+    total_count?: number; // only needed for the first request to get total count of comments
+}
+
+// res = {
+//     code: number; // 200 for success, 300 if token is invalid, 400 for deny, 500 for error
+//     data?: {
+//         messages: {
+//             total_count?: number; // total count of comments, only needed for the first request
+//             message_list:{
+//                 id: number; // comment id
+//                 user:{
+//                     id: string|number; // user id or guest id
+//                     name: string; // user name
+//                 };
+//                 content: string; // comment content
+//                 created_at: string; // comment created at date
+//             }
+//         }[];
+//     }
+// }
+
+// -------------- return post_list--------------
+export type post_list = {
+    token: string; // JWT token
+    query?: string; // search query for posts
+    perpage: number; // count of posts to fetch perpage
+    current_page: number; // current page number
+    status?: 'draft' | 'published'; // state of posts to fetch
+    category_id?: number; // category id to filter posts
+    total_count?: number; // only needed for the first request to get total count of posts
+}
+
+// res = {
+//     code: number; // 200 for success, 300 if token is invalid, 400 for deny, 500 for error
+//     data?: {
+//         posts: {
+//             total_count?: number; // total count of posts, only needed for the first request
+//             post_list: {
+//                 id: number; // post id
+//                 title: string; // post title
+//                 summary: string; // post summary
+//                 front_image_url: string; // post cover image url
+//                 created_at: string; // post created at date
+//                 status: 'draft' | 'published'; // post status
+//                 category_id?: number; // category id of the post
+//                 tags?: string[]; // tags of the post
+//                 views: number; // post views count
+//                 comments: number; // post comments count
+//                 likes: number; // post likes count
+//             }[];
+//         }
+//     }
+// }
+
+// -------------- publish / unpublish post --------------
+export type change_post_status = {
+    token: string; // JWT token
+    post_id: number; // post id
+}
+// res = {
+//     code: number; // 200 for success, 300 if token is invalid, 400 for deny, 500 for error
+
+// }
+// -------------- delete post --------------
+export type delete_post = {
+    token: string; // JWT token
+    post_id: number; 
+}
+// res = {
+//     code: number; // 200 for success, 300 if token is invalid, 400 for deny, 500 for error
+// }
+
+

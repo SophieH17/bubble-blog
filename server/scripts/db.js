@@ -37,7 +37,7 @@ let post =
     category_id INT,
     classification ENUM('article', 'image', 'shareable'),
     tag VARCHAR(100),
-    description VARCHAR(1000),
+    summary VARCHAR(1000),
     content TEXT,
     front_image VARCHAR(100), COMMENT 'URL of the front image',
     view_count INT DEFAULT 0,
