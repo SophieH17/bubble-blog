@@ -97,10 +97,6 @@ onBeforeMount(() => {
   cursor: pointer;
   padding: 8px 12px;
   transition: all 0.3s ease;
-  
-  &:hover {
-    background-color: var(--el-bg-color-overlay);
-  }
 }
 .right-actions {
   display: flex;

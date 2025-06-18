@@ -12,6 +12,6 @@ import MenuBar from "../components/bars/MenuBar.vue";
 <style lang="scss" scoped>
 .index-view {
   display: flex;
-  padding: 32px 32px 32px 232px;
+  padding: 20px 20px 20px 210px;
 }
 </style>

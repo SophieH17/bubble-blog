@@ -22,15 +22,15 @@ import { navLinks } from "../../utils/menu";
 </script>
 <style lang="scss" scoped>
 .menu-bar {
-  width: 160px;
+  width: 120px;
   height: 100%;
   padding: 10px;
   position: fixed;
-  top: 70px;
-  left: 8px;
+  top: 76px;
+  left: 20px;
 
   &__item {
-    width: 100%;
+    // width: 100%;
     display: flex;
     height: 36px;
     background-color: var(--el-bg-color-overlay);
