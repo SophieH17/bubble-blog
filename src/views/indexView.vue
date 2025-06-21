@@ -1,7 +1,7 @@
 <template>
   <div class="index-view">
     <menu-bar />
-    <router-view />
+    <router-view class="router-content"/>
   </div>
 </template>
 
@@ -13,5 +13,8 @@ import MenuBar from "../components/bars/MenuBar.vue";
 .index-view {
   display: flex;
   padding: 20px 20px 20px 210px;
+}
+.router-content {
+  width: 100%;     
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
-  <div class="head-bar">
-  <div class="logo-container" @click="backHome">
-    <img src="../../assets/bubble-blog.svg" class="logo" />
-    <span class="title">Bubble Blog</span>
-  </div>
+  <el-space class="head-bar">
+    <div class="logo-container" @click="backHome">
+      <img src="../../assets/bubble-blog.svg" class="logo" />
+      <span class="title">Bubble Blog</span>
+    </div>
 
     <div class="right-actions">
       <!-- <el-icon><Message /></el-icon> -->
@@ -36,7 +36,7 @@
         Logout
       </el-button>
     </div>
-  </div>
+  </el-space>
 </template>
 
 <script setup lang="ts">
@@ -85,7 +85,7 @@ onBeforeMount(() => {
 
 .logo-link {
   display: flex;
-  text-decoration: none;      
+  text-decoration: none;
   align-items: center;
   gap: 10px;
 }

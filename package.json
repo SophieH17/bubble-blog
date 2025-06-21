@@ -15,8 +15,10 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@types/mockjs": "^1.0.10",
     "@vitejs/plugin-vue": "^5.2.3",
     "@vue/tsconfig": "^0.7.0",
+    "mockjs": "^1.1.0",
     "sass": "^1.89.2",
     "sass-embedded": "^1.89.2",
     "typescript": "~5.8.3",

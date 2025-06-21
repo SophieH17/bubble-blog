@@ -26,6 +26,7 @@ declare module 'vue' {
     ElText: typeof import('element-plus/es')['ElText']
     ElTitle: typeof import('element-plus/es')['ElTitle']
     ElTooltip: typeof import('element-plus/es')['ElTooltip']
+    Gather: typeof import('./src/components/overview/gather.vue')['default']
     HeadBar: typeof import('./src/components/bars/HeadBar.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     MenuBar: typeof import('./src/components/bars/MenuBar.vue')['default']

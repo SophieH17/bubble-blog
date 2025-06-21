@@ -31,3 +31,26 @@ export const navLinks = [
         icon: Setting
     },
 ]
+
+export const overLink = [{
+    path: '',
+    name: 'Files',
+    total: "0M",
+    bgColor: 'var(--el-color-primary)',
+},{
+    path: 'create_article',
+    name: 'Articles',
+    total: 0,
+    bgColor: 'var(--el-color-secondary)',
+},{
+    path: 'create_image',
+    name: 'Images',
+    total: 0,
+    bgColor: 'var(--el-color-secondary)',
+},
+{
+    path: 'create_diary',
+    name: 'Diaries',
+    total: 0,
+    bgColor: 'var(--el-color-secondary)',
+}]
