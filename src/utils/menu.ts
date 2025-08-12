@@ -36,21 +36,21 @@ export const overLink = [{
     path: '',
     name: 'Files',
     total: "0M",
-    bgColor: 'var(--el-color-primary)',
+    bgColor: 'var(--el-color-primary-light-7)',
 },{
     path: 'create_article',
     name: 'Articles',
     total: 0,
-    bgColor: 'var(--el-color-secondary)',
+    bgColor: 'var(--el-color-success-light-7)',
 },{
     path: 'create_image',
     name: 'Images',
     total: 0,
-    bgColor: 'var(--el-color-secondary)',
+    bgColor: 'var(--el-color-warning-light-7)',
 },
 {
     path: 'create_diary',
     name: 'Diaries',
     total: 0,
-    bgColor: 'var(--el-color-secondary)',
+    bgColor: 'var(--el-color-danger-light-7)',
 }]
